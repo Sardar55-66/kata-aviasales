@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    float: right;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 20px;
+    width: calc(33% + 5px);
+    cursor: pointer;
+    color: #4A4A4A;
+    background-color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    outline: none;
+    height: 50px;
+}
+
+.title:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.title:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.title:hover {
+    background-color: #2196F3;
+    color: #FFFF;
+}
+
+.active {
+    background-color: #2196F3;
+    color: #FFFF;
+}
+
+.icon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+@media(min-width: 375px) {
+    .header {
+        width: 100%;
+        display: block;
+    }
+
+    .title {
+        font-size: 7px;
+        width: 33%;
+    }
+}
+
+@media(min-width: 425px) {
+    .header {
+        width: 100%;
+        display: block;
+    }
+
+    .title {
+        font-size: 8px;
+        width: 33%;
+    }
+}
+
+@media(min-width: 767px) {
+    .title {
+        font-size: 10px;
+    }
+
+    .header {
+        width: 70%;
+        margin-right: 15px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .header {
+        width: calc(71% + 10px);
+        margin-right: 25px;
+    }
+}

@@ -1,0 +1,84 @@
+.flycard {
+    float: right;
+    margin-top: 50px;
+    width: 70%;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.flycard__title {
+    display: flex;
+    justify-content: space-between;
+    color: #2196F3;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 100% */
+}
+
+.flycard__first-direction,
+.flycard__second-direction {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    /* 150% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.direction,
+.timeleft,
+.transfer-count {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.flycard__logo {
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-right: 25px;
+}
+
+.grey-colored {
+    color: #A0B0B9;
+}
+
+.black-colored {
+    color: #4A4A4A;
+}
+
+@media(min-width: 375px) {
+    .flycard {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .flycard {
+        width: 70%;
+        display: inline-block;
+    }
+}
+
+@media(min-width: 1440px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .header {
+        margin-right: 25px;
+    }
+}
